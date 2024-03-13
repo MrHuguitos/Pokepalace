@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo9.css') }}">
+</head>
+<body>
+    <form action="/validar" method="post">
+        <h2>Confirme seus dados:</h2>
+        <label>E-mail:</label>
+        <div class="input">
+            <input type="email" name="mail" id="mail" placeholder="Ex.: xxxx.xxxx@gmail.com" required>
+        </div>
+        <label>Senha:</label>
+        <div class="input">
+            <input type="password" name="senha" id="senha" placeholder="123Nome#@" required>
+        </div>
+        <div id="btn">
+            <button type="submit">Confirmar</button>
+        </div>        
+    </form>    
+</body>
+</html>
